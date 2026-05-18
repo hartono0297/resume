@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Hartono Hong Software Developer">
+  <rect width="1200" height="630" fill="#080808"/>
+  <path d="M72 96h1056M72 534h1056" stroke="#2a2a2a" stroke-width="2"/>
+  <text x="72" y="154" fill="#a3e635" font-family="JetBrains Mono, monospace" font-size="24">[PORTFOLIO // SOFTWARE DEVELOPER]</text>
+  <text x="72" y="302" fill="#f5f5f0" font-family="Geist, Inter, Arial, sans-serif" font-size="92" font-weight="800">Hartono Hong.</text>
+  <text x="72" y="390" fill="#c2cab0" font-family="Geist, Inter, Arial, sans-serif" font-size="40" font-weight="600">Backend services, internal apps, and automation.</text>
+  <rect x="72" y="452" width="294" height="54" rx="4" fill="#a3e635"/>
+  <text x="98" y="488" fill="#080808" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700">hartonohong.dev</text>
+</svg>
