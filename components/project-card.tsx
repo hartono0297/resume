@@ -1,3 +1,4 @@
+import { ExternalLink } from "lucide-react";
 import type { Project } from "@/data/projects";
 import { Tag } from "./tag";
 
@@ -24,6 +25,18 @@ export function ProjectCard({ project }: ProjectCardProps) {
           <div className="mt-5 border-l border-accent pl-4">
             <p className="font-mono text-xs leading-5 text-muted">{project.note}</p>
           </div>
+        ) : null}
+
+        {project.link ? (
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noreferrer"
+            className="focus-ring mt-6 inline-flex w-fit items-center gap-2 rounded border border-border px-4 py-2.5 font-mono text-xs font-semibold text-foreground transition-colors duration-200 hover:border-accent hover:bg-surface-raised"
+          >
+            Visit
+            <ExternalLink aria-hidden="true" className="h-4 w-4" />
+          </a>
         ) : null}
       </div>
 

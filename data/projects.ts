@@ -4,6 +4,7 @@ export type Project = {
   description: string;
   impact: string;
   technologies: string[];
+  link?: string;
   note?: string;
 };
 
@@ -44,5 +45,15 @@ export const projects: Project[] = [
     impact:
       "Supported daily finance operations and improved data flow between internal systems.",
     technologies: [".NET Framework", "C#", "SQL Server"]
+  },
+  {
+    title: "thuangarchitect.com",
+    category: "Freelance / Portfolio",
+    description:
+      "Designed and developed a responsive portfolio website for THUANGARCHITECT, an architecture studio specializing in minimalist private and commercial spaces. The website highlights project showcases, studio information, and contact access through a clean and professional user interface.",
+    impact:
+      "Helped the studio present architectural work through a polished digital portfolio with direct access to project showcases and contact channels.",
+    technologies: ["Next.js", "Tailwind CSS", "Responsive", "AI Prompt"],
+    link: "https://thuangarchitect.com"
   }
 ];
