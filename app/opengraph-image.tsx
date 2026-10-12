@@ -42,7 +42,7 @@ export default function OpengraphImage() {
             fontWeight: 700
           }}
         >
-          hartonohong.dev
+          hartonohong.com
         </div>
       </div>
     ),

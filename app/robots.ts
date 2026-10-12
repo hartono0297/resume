@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/"
     },
-    sitemap: "https://hartonohong.dev/sitemap.xml"
+    sitemap: "https://hartonohong.com/sitemap.xml"
   };
 }

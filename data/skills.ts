@@ -9,7 +9,7 @@ export const skills = [
   },
   {
     category: "Database",
-    items: ["SQL Server", "Stored Procedures", "Query Optimization", "Supabase"]
+    items: ["SQL Server", "PostgreSQL", "Redis", "Stored Procedures", "Query Optimization", "Supabase"]
   },
   {
     category: "Architecture and Practices",
@@ -31,6 +31,6 @@ export const skills = [
   },
   {
     category: "Tools and Infrastructure",
-    items: ["Visual Studio", "VS Code", "Git", "Postman", "Swagger", "Docker", "Cloudflare DNS"]
+    items: ["Visual Studio", "VS Code", "Git", "Postman", "Swagger", "Docker", "Jenkins", "Cloudflare DNS"]
   }
 ];

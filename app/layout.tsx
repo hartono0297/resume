@@ -14,7 +14,7 @@ const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains"
 });
 
-const siteUrl = "https://hartonohong.dev";
+const siteUrl = "https://hartonohong.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
