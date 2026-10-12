@@ -10,7 +10,7 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/hartonohong",
   github: "https://github.com/hartono0297",
   whatsapp: "https://wa.me/6289512964872",
-  resume: "/cv-hartono-hong.pdf",
+  resume: "/cv-hartono.pdf",
   headline:
     "I build reliable backend systems and internal apps, and ship them faster with AI agents.",
   subheadline:
