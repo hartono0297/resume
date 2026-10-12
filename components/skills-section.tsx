@@ -5,9 +5,9 @@ import { Tag } from "./tag";
 
 export function SkillsSection() {
   return (
-    <section className="section-shell" aria-labelledby="skills-title">
+    <section id="skills" className="section-shell scroll-mt-20" aria-labelledby="skills-title">
       <Reveal>
-        <SectionHeading number="03" label="Technical Stack" id="skills-title" />
+        <SectionHeading number="02" label="Technical Stack" id="skills-title" />
         <div className="grid gap-gutter md:grid-cols-2 lg:grid-cols-3">
           {skills.map((group) => (
             <article key={group.category} className="technical-card p-6">

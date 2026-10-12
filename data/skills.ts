@@ -1,64 +1,36 @@
 export const skills = [
   {
     category: "Backend",
-    items: [
-      ".NET Framework",
-      ".NET Core",
-      ".NET 8",
-      "ASP.NET Core",
-      "C#",
-      "REST APIs",
-      "Swagger",
-      "JWT Authentication"
-    ]
+    items: ["C#", "ASP.NET Core", ".NET 8", ".NET Framework", "REST APIs", "JWT Authentication"]
   },
   {
     category: "Frontend",
-    items: [
-      "Vue.js",
-      "Composition API",
-      "Razor",
-      "JavaScript",
-      "HTML",
-      "CSS",
-      "Tailwind CSS"
-    ]
+    items: ["Razor", "JavaScript", "HTML", "CSS", "Tailwind CSS"]
   },
   {
     category: "Database",
-    items: [
-      "SQL Server",
-      "Stored Procedure",
-      "Query Development",
-      "Query Optimization",
-      "Data Synchronization"
-    ]
+    items: ["SQL Server", "Stored Procedures", "Query Optimization", "Supabase"]
   },
   {
     category: "Architecture and Practices",
-    items: [
-      "Layered Architecture",
-      "Repository Pattern",
-      "Service Pattern",
-      "Microservice-based Application",
-      "System Integration",
-      "API Integration"
-    ]
+    items: ["Layered Architecture", "Repository Pattern", "Service Pattern", "Microservices", "System Integration"]
   },
   {
-    category: "AI and Automation",
+    category: "AI Agents and Models",
     items: [
-      "GitHub Copilot",
-      "Claude",
       "Claude Code",
-      "Gemini",
       "Codex",
-      "Prompt Engineering",
-      "AI-assisted Development"
+      "Kilo Code",
+      "Orca",
+      "GitHub Copilot",
+      "9Router",
+      "Claude",
+      "Gemini",
+      "Free, Open-source & Frontier Models"
     ]
   },
   {
-    category: "Tools",
-    items: ["Visual Studio", "VS Code", "Git", "Postman", "Swagger"]
+    category: "Tools and Infrastructure",
+    items: ["Visual Studio", "VS Code", "Git", "Postman", "Swagger", "Docker", "Cloudflare DNS"]
   }
 ];

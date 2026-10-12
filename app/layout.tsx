@@ -1,5 +1,18 @@
 import type { Metadata } from "next";
+import { Geist, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+
+const geist = Geist({
+  subsets: ["latin"],
+  weight: ["400", "600", "700", "800"],
+  variable: "--font-geist"
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-jetbrains"
+});
 
 const siteUrl = "https://hartonohong.dev";
 
@@ -10,13 +23,16 @@ export const metadata: Metadata = {
     template: "%s // Hartono Hong"
   },
   description:
-    "Portfolio of Hartono Hong, a Software Developer focused on backend services, internal business applications, system integration, and automation.",
+    "Portfolio of Hartono Hong, a Jakarta-based Software Developer building reliable backend systems and internal apps, and shipping them faster with AI agents.",
   keywords: [
     "Hartono Hong",
     "Software Developer",
     ".NET Developer",
     "SQL Server",
+    "Razor",
     "Backend Developer",
+    "AI Agents",
+    "Claude Code",
     "Portfolio"
   ],
   authors: [{ name: "Hartono Hong", url: siteUrl }],
@@ -27,23 +43,14 @@ export const metadata: Metadata = {
     url: siteUrl,
     title: "Hartono Hong // Software Developer",
     description:
-      "Software Developer building reliable backend services, internal business applications, and automation tools.",
-    siteName: "Hartono Hong Portfolio",
-    images: [
-      {
-        url: "/og-image.svg",
-        width: 1200,
-        height: 630,
-        alt: "Hartono Hong portfolio preview"
-      }
-    ]
+      "I build reliable backend systems and internal apps, and ship them faster with AI agents.",
+    siteName: "Hartono Hong Portfolio"
   },
   twitter: {
     card: "summary_large_image",
     title: "Hartono Hong // Software Developer",
     description:
-      "Software Developer building reliable backend services, internal business applications, and automation tools.",
-    images: ["/og-image.svg"]
+      "I build reliable backend systems and internal apps, and ship them faster with AI agents."
   },
   icons: {}
 };
@@ -52,10 +59,7 @@ function ThemeScript() {
   const code = `
     (() => {
       try {
-        const storedTheme = localStorage.getItem("theme");
-        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-        const theme = storedTheme || "dark";
-        const isDark = theme === "dark" || (!storedTheme && prefersDark);
+        const isDark = (localStorage.getItem("theme") || "dark") === "dark";
         const faviconHref = isDark ? "/favicon-dark.svg" : "/favicon-light.svg";
 
         document.documentElement.classList.toggle("dark", isDark);
@@ -90,15 +94,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
+    <html
+      lang="en"
+      className={`dark ${geist.variable} ${jetbrainsMono.variable}`}
+      suppressHydrationWarning
+    >
       <head>
         <link id="theme-favicon" rel="icon" href="/favicon-dark.svg" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
-          rel="stylesheet"
-        />
         <ThemeScript />
       </head>
       <body>{children}</body>

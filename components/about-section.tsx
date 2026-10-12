@@ -1,4 +1,4 @@
-import { Bot, BriefcaseBusiness, Database, ServerCog } from "lucide-react";
+import { Bot, BriefcaseBusiness, Network, ServerCog } from "lucide-react";
 import { about, highlights } from "@/data/profile";
 import { Reveal } from "./reveal";
 import { SectionHeading } from "./section-heading";
@@ -6,7 +6,7 @@ import { SectionHeading } from "./section-heading";
 const iconMap = {
   BriefcaseBusiness,
   ServerCog,
-  Database,
+  Network,
   Bot
 };
 
@@ -14,7 +14,7 @@ export function AboutSection() {
   return (
     <section id="about" className="section-shell scroll-mt-20" aria-labelledby="about-title">
       <Reveal>
-        <SectionHeading number="02" label="About" id="about-title" />
+        <SectionHeading number="01" label="About" id="about-title" />
         <div className="grid gap-12 md:grid-cols-12 md:gap-gutter">
           <div className="space-y-6 text-base leading-8 text-subtle md:col-span-5 md:text-lg">
             {about.map((paragraph) => (

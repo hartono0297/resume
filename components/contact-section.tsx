@@ -10,15 +10,15 @@ export function ContactSection() {
     <section id="contact" className="section-shell scroll-mt-20 border-b-0 py-28 text-center md:py-40" aria-labelledby="contact-title">
       <Reveal>
         <SectionHeading
-          number="07"
+          number="06"
           label="Contact"
           id="contact-title"
           title="Let's build something reliable."
           align="center"
         />
         <p className="mx-auto max-w-2xl text-base leading-8 text-subtle md:text-lg">
-          I'm open to software developer roles focused on backend development, full-stack development,
-          internal business applications, automation, and system integration.
+          I'm open to software developer roles in backend, full-stack, and system integration, especially on
+          teams that want to ship faster with AI agents. Freelance projects are welcome too.
         </p>
 
         <div className="mx-auto mt-9 flex max-w-3xl flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">

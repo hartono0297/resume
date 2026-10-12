@@ -14,15 +14,11 @@ export const experiences: Experience[] = [
     description:
       "Developing and maintaining internal business applications, backend API services, stored procedures, monitoring pages, automation tools, and system integration features.",
     highlights: [
-      "Designed and developed Insurance Service microservice.",
+      "Designed and developed the Insurance Service microservice.",
       "Migrated legacy console applications to .NET 8.",
-      "Implemented data synchronization between vendor and internal applications.",
-      "Created monitoring pages to track unsynchronized data.",
-      "Developed stored procedures to automate data processing.",
-      "Fixed bugs to improve performance, stability, and reliability.",
-      "Gathered user requirements and translated them into functional and technical designs.",
-      "Collaborated with Project Manager to clarify requirements and align priorities.",
-      "Created and executed system testing."
+      "Built data synchronization and monitoring between vendor and internal applications.",
+      "Gathered requirements with users and Project Managers and translated them into technical designs.",
+      "Ran system testing and fixed bugs to improve performance, stability, and reliability."
     ]
   },
   {

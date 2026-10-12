@@ -16,8 +16,7 @@ export const projects: Project[] = [
       "Designed and developed a new Insurance Service microservice to support insurance cover-related business processes, including backend API services and frontend implementation.",
     impact:
       "Helped separate insurance-related processes into a dedicated service, improving maintainability and supporting clearer business workflows.",
-    technologies: [".NET 6", "C#", "SQL Server", "REST API", "Swagger", "Microservice"],
-    note: "Used AI-assisted development tools to speed up UI implementation and development workflow."
+    technologies: [".NET 6", "C#", "SQL Server", "REST API", "Swagger", "Microservice"]
   },
   {
     title: "Monitoring App",
@@ -48,12 +47,43 @@ export const projects: Project[] = [
   },
   {
     title: "thuangarchitect.com",
-    category: "Freelance / Portfolio",
+    category: "Freelance / Portfolio / Static Website",
     description:
-      "Designed and developed a responsive portfolio website for THUANGARCHITECT, an architecture studio specializing in minimalist private and commercial spaces. The website highlights project showcases, studio information, and contact access through a clean and professional user interface.",
+      "Designed and developed a fast, responsive portfolio website for THUANGARCHITECT, a Medan-based architecture studio specializing in minimalist private and commercial spaces. Project photos are automatically optimized into clean galleries, and the site is set up to be easy to find on Google and AI search.",
     impact:
-      "Helped the studio present architectural work through a polished digital portfolio with direct access to project showcases and contact channels.",
-    technologies: ["Next.js", "Tailwind CSS", "Responsive", "AI Prompt"],
-    link: "https://thuangarchitect.com"
+      "Helped the studio present its work through a polished portfolio that scores 90+ on mobile Lighthouse, with automated tests checking every change before it goes live.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Static Export",
+      "SEO / GEO",
+      "Playwright",
+      "Lighthouse",
+      "GitHub Actions",
+      "Netlify",
+      "Claude Code"
+    ],
+    link: "https://www.thuangarchitect.com"
+  },
+  {
+    title: "Fintrac",
+    category: "Freelance / Personal Finance / Web App",
+    description:
+      "Designed and developed a personal finance web app that keeps accounts, bills, credit cards, and installments in one record book. Installments are visualized as a garden of trees that grow with every recorded payment, alongside cash flow reports, maintenance schedules, and upcoming bill reminders. The whole app was built end-to-end with Claude agents.",
+    impact:
+      "Makes personal money management calmer and faster with receipt-photo drafts, an AI assistant that answers from the user's own records, and CSV/Excel exports, with every AI suggestion waiting for user confirmation.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Supabase",
+      "Tailwind CSS",
+      "Vercel AI SDK",
+      "Playwright",
+      "Claude Code",
+      "Obsidian",
+      "Context7"
+    ],
+    link: "https://fintrac.my.id"
   }
 ];

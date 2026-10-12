@@ -1,7 +1,7 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
-import { useEffect, useState, type ReactNode } from "react";
+import { animate, useInView, useReducedMotion } from "framer-motion";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 
 type RevealProps = {
   children: ReactNode;
@@ -10,26 +10,31 @@ type RevealProps = {
 };
 
 export function Reveal({ children, className, delay = 0 }: RevealProps) {
+  const ref = useRef<HTMLDivElement>(null);
   const prefersReducedMotion = useReducedMotion();
-  const [isMounted, setIsMounted] = useState(false);
+  const isInView = useInView(ref, { once: true, margin: "-80px" });
+  const [isHidden, setIsHidden] = useState(false);
+
+  // Only hide content that starts below the fold, so anything visible on load never flickers.
+  useEffect(() => {
+    const element = ref.current;
+    if (!element || prefersReducedMotion || !window.innerHeight) return;
+    if (element.getBoundingClientRect().top < window.innerHeight) return;
+
+    animate(element, { opacity: 0, y: 18 }, { duration: 0 });
+    setIsHidden(true);
+  }, [prefersReducedMotion]);
 
   useEffect(() => {
-    setIsMounted(true);
-  }, []);
+    const element = ref.current;
+    if (!element || !isHidden || !isInView) return;
 
-  if (!isMounted || prefersReducedMotion) {
-    return <div className={className}>{children}</div>;
-  }
+    animate(element, { opacity: 1, y: 0 }, { duration: 0.5, ease: "easeOut", delay });
+  }, [isHidden, isInView, delay]);
 
   return (
-    <motion.div
-      className={className}
-      initial={{ opacity: 0, y: 18 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-80px" }}
-      transition={{ duration: 0.5, ease: "easeOut", delay }}
-    >
+    <div ref={ref} className={className}>
       {children}
-    </motion.div>
+    </div>
   );
 }

@@ -8,10 +8,10 @@ export function ProjectsSection() {
     <section id="work" className="section-shell scroll-mt-20" aria-labelledby="work-title">
       <Reveal>
         <SectionHeading
-          number="04"
+          number="03"
           label="Selected Work"
           id="work-title"
-          lead="Selected internal projects focused on business context, technical contribution, and operational impact."
+          lead="A mix of internal systems I build at work and freelance products I ship on the side."
         />
         <div className="grid gap-gutter lg:grid-cols-2">
           {projects.map((project) => (

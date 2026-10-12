@@ -8,7 +8,7 @@ export function ExperienceSection() {
       <Reveal>
         <div className="grid gap-14 md:grid-cols-12 md:gap-gutter">
           <div className="md:col-span-8">
-            <SectionHeading number="05" label="Experience" id="experience-title" />
+            <SectionHeading number="04" label="Experience" id="experience-title" />
             <div className="relative ml-3 border-l border-border pl-8">
               {experiences.map((experience, index) => (
                 <article key={`${experience.company}-${experience.role}`} className="relative pb-12 last:pb-0">
@@ -35,7 +35,7 @@ export function ExperienceSection() {
           </div>
 
           <aside className="md:col-span-4">
-            <SectionHeading number="06" label="Education" />
+            <SectionHeading number="05" label="Education" />
             <div className="technical-card p-6 md:p-7">
               <p className="mb-3 font-mono text-xs uppercase text-muted">{education.period}</p>
               <h3 className="text-2xl font-bold text-foreground">{education.major}</h3>
